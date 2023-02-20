@@ -12,6 +12,9 @@ namespace EntityFramTraining
         public int Age { get; set; } // поле Int не допускает Null поэтому и в БД NOT NULL
         public string Name { get; set; } // поле String допускает Null поэтому и в БД NULL
         public string SurName { get; set; }
+        public int DepartmentId { get; set; } // необязательгое поле, что бы cod convension не допускал NULL
+        public Department Department { get; set; } // нотификационное поле говорит о том, что это PRIMARY KEY
+
 
 
     }

@@ -8,8 +8,8 @@ namespace EntityFramTraining
 {
     public class Department
     {
-        public int Id { get; set; } 
-        public string Name { get; set; }    
-        //public ICollection<Person> Persons { get; set; } // связь с таблицей Person по столбцу 
+        public int DepartmentId { get; set; } 
+        public string Name { get; set; }
+        public ICollection<Person> Persons { get; set; } // связь с таблицей Person по столбцу 
     }
 }

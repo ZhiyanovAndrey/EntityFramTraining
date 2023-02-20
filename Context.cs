@@ -15,7 +15,7 @@ namespace EntityFramTraining
 
         public Context()
         {
-            Database.EnsureCreated(); // удаляет БД 
+            Database.EnsureDeleted(); // удаляет БД 
             Database.EnsureCreated(); // создает БД
         }
 
