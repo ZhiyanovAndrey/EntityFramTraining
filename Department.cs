@@ -10,7 +10,7 @@ namespace EntityFramTraining
     {
         public int DepartmentId { get; set; } 
         public string Name { get; set; }
-
+        
         //public Person Person { get; set; } // необязательное поле для удобства чтения
         //public ICollection<Person> Persons { get; set; } // связь с таблицей Person по столбцу 
     }
