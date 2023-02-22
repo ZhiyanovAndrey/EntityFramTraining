@@ -15,13 +15,14 @@ namespace EntityFramTraining
 
         public Context()
         {
-            Database.EnsureDeleted(); // удаляет БД 
+            //Database.EnsureDeleted(); // удаляет БД 
             Database.EnsureCreated(); // создает БД
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=postgres;Username=postgres;Password=User1234");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5433;Database=postgres;Username=postgres;Password=User1234")
+                ;
             /*Строка подключения содержит адрес сервера (параметр Host), порт (Port), 
              * название базы данных на сервере (Database),
              * имя пользователя в рамках сервера PostgreSQL (Username) и его пароль (Password).*/ 
